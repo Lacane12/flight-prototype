@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=320 height=720 tabindex="-1" style="width: 320px; height: 720px; background: #231F20"></canvas>
-    <script src="Build/flight-prototype.loader.js"></script>
+    <script src="Build/Prototype_Final.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/flight-prototype.data",
-        frameworkUrl: "Build/flight-prototype.framework.js",
-        codeUrl: "Build/flight-prototype.wasm",
+        dataUrl: "Build/Prototype_Final.data.gz",
+        frameworkUrl: "Build/Prototype_Final.framework.js.gz",
+        codeUrl: "Build/Prototype_Final.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Planes Runner",
